@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
 
-Product.create(:title => 'Programming Ruby 1.9', :description =>" Ruby is the fast growing and most exciting .... ", :image_url => '/assets/ruby.jpg', :price => 49.50)
+Product.create(:title => 'Programming Ruby 1.9', :description =>" Ruby is the fast growing and most exciting dynamic language out there.If you need to get working programs delivered fast,you should add Ruby to your toolbox. ", :image_url => '/assets/ruby.jpg', :price => 49.50)
