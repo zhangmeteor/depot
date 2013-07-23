@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Depot
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Cart	app/models/cart.rb	/^class Cart < ActiveRecord::Base$/;"	c
+CartTest	test/models/cart_test.rb	/^class CartTest < ActiveSupport::TestCase$/;"	c
+CartsController	app/controllers/carts_controller.rb	/^class CartsController < ApplicationController$/;"	c
+CartsControllerTest	test/controllers/carts_controller_test.rb	/^class CartsControllerTest < ActionController::TestCase$/;"	c
+CartsHelper	app/helpers/carts_helper.rb	/^module CartsHelper$/;"	m
+CartsHelperTest	test/helpers/carts_helper_test.rb	/^class CartsHelperTest < ActionView::TestCase$/;"	c
+CreateCarts	db/migrate/20130723030947_create_carts.rb	/^class CreateCarts < ActiveRecord::Migration$/;"	c
+CreateLineItems	db/migrate/20130723032254_create_line_items.rb	/^class CreateLineItems < ActiveRecord::Migration$/;"	c
+CreateProducts	db/migrate/20130720181402_create_products.rb	/^class CreateProducts < ActiveRecord::Migration$/;"	c
+Depot	config/application.rb	/^module Depot$/;"	m
+LineItem	app/models/line_item.rb	/^class LineItem < ActiveRecord::Base$/;"	c
+LineItemTest	test/models/line_item_test.rb	/^class LineItemTest < ActiveSupport::TestCase$/;"	c
+LineItemsController	app/controllers/line_items_controller.rb	/^class LineItemsController < ApplicationController$/;"	c
+LineItemsControllerTest	test/controllers/line_items_controller_test.rb	/^class LineItemsControllerTest < ActionController::TestCase$/;"	c
+LineItemsHelper	app/helpers/line_items_helper.rb	/^module LineItemsHelper$/;"	m
+LineItemsHelperTest	test/helpers/line_items_helper_test.rb	/^class LineItemsHelperTest < ActionView::TestCase$/;"	c
+Product	app/models/product.rb	/^class Product < ActiveRecord::Base$/;"	c
+ProductTest	test/models/product_test.rb	/^class ProductTest < ActiveSupport::TestCase$/;"	c
+ProductsController	app/controllers/products_controller.rb	/^class ProductsController < ApplicationController$/;"	c
+ProductsControllerTest	test/controllers/products_controller_test.rb	/^class ProductsControllerTest < ActionController::TestCase$/;"	c
+ProductsHelper	app/helpers/products_helper.rb	/^module ProductsHelper$/;"	m
+ProductsHelperTest	test/helpers/products_helper_test.rb	/^class ProductsHelperTest < ActionView::TestCase$/;"	c
+StoreController	app/controllers/store_controller.rb	/^class StoreController < ApplicationController$/;"	c
+StoreControllerTest	test/controllers/store_controller_test.rb	/^class StoreControllerTest < ActionController::TestCase$/;"	c
+StoreHelper	app/helpers/store_helper.rb	/^module StoreHelper$/;"	m
+StoreHelperTest	test/helpers/store_helper_test.rb	/^class StoreHelperTest < ActionView::TestCase$/;"	c
+cart_params	app/controllers/carts_controller.rb	/^    def cart_params$/;"	f	class:CartsController
+change	db/migrate/20130720181402_create_products.rb	/^  def change$/;"	f	class:CreateProducts
+change	db/migrate/20130723030947_create_carts.rb	/^  def change$/;"	f	class:CreateCarts
+change	db/migrate/20130723032254_create_line_items.rb	/^  def change$/;"	f	class:CreateLineItems
+create	app/controllers/carts_controller.rb	/^  def create$/;"	f	class:CartsController
+create	app/controllers/line_items_controller.rb	/^  def create$/;"	f	class:LineItemsController
+create	app/controllers/products_controller.rb	/^  def create$/;"	f	class:ProductsController
+current_cart	app/controllers/application_controller.rb	/^  def current_cart$/;"	f	class:ApplicationController
+destroy	app/controllers/carts_controller.rb	/^  def destroy$/;"	f	class:CartsController
+destroy	app/controllers/line_items_controller.rb	/^  def destroy$/;"	f	class:LineItemsController
+destroy	app/controllers/products_controller.rb	/^  def destroy$/;"	f	class:ProductsController
+down	db/migrate/20130720181402_create_products.rb	/^  def self.down$/;"	F	class:CreateProducts
+edit	app/controllers/carts_controller.rb	/^  def edit$/;"	f	class:CartsController
+edit	app/controllers/line_items_controller.rb	/^  def edit$/;"	f	class:LineItemsController
+edit	app/controllers/products_controller.rb	/^  def edit$/;"	f	class:ProductsController
+ensure_not_referenced_by_any_line_item	app/models/product.rb	/^  def ensure_not_referenced_by_any_line_item$/;"	f	class:Product
+index	app/controllers/carts_controller.rb	/^  def index$/;"	f	class:CartsController
+index	app/controllers/line_items_controller.rb	/^  def index$/;"	f	class:LineItemsController
+index	app/controllers/products_controller.rb	/^  def index$/;"	f	class:ProductsController
+index	app/controllers/store_controller.rb	/^  def index$/;"	f	class:StoreController
+line_item_params	app/controllers/line_items_controller.rb	/^    def line_item_params$/;"	f	class:LineItemsController
+new	app/controllers/carts_controller.rb	/^  def new$/;"	f	class:CartsController
+new	app/controllers/line_items_controller.rb	/^  def new$/;"	f	class:LineItemsController
+new	app/controllers/products_controller.rb	/^  def new$/;"	f	class:ProductsController
+product_params	app/controllers/products_controller.rb	/^    def product_params$/;"	f	class:ProductsController
+set_cart	app/controllers/carts_controller.rb	/^    def set_cart$/;"	f	class:CartsController
+set_line_item	app/controllers/line_items_controller.rb	/^    def set_line_item$/;"	f	class:LineItemsController
+set_product	app/controllers/products_controller.rb	/^    def set_product$/;"	f	class:ProductsController
+show	app/controllers/carts_controller.rb	/^  def show$/;"	f	class:CartsController
+show	app/controllers/line_items_controller.rb	/^  def show$/;"	f	class:LineItemsController
+show	app/controllers/products_controller.rb	/^  def show$/;"	f	class:ProductsController
+update	app/controllers/carts_controller.rb	/^  def update$/;"	f	class:CartsController
+update	app/controllers/line_items_controller.rb	/^  def update$/;"	f	class:LineItemsController
+update	app/controllers/products_controller.rb	/^  def update$/;"	f	class:ProductsController
