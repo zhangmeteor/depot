@@ -4906,3 +4906,1196 @@ ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
   Rendered /Users/zhanghao/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
   Rendered /Users/zhanghao/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered /Users/zhanghao/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoreController#index as HTML
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Product> at /Users/zhanghao/depot/depot/app/models/product.rb:2)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (99.3ms)
+Completed 200 OK in 254ms (Views: 222.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 06:33:45 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.8ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (92.4ms)
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 06:33:46 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.3ms)
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 06:33:46 +0800
+
+
+Started POST "/line_items?product_id=13" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"13"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (54.3ms)[0m  INSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Tue, 23 Jul 2013 22:34:22 UTC +00:00], ["updated_at", Tue, 23 Jul 2013 22:34:22 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "13"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES (?, ?, ?, ?)  [["cart_id", 8], ["created_at", Tue, 23 Jul 2013 22:34:22 UTC +00:00], ["product_id", 13], ["updated_at", Tue, 23 Jul 2013 22:34:22 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? ORDER BY "carts"."id" ASC LIMIT 1  [["id", 8]]
+Redirected to http://0.0.0.0:3000/carts/8
+Completed 302 Found in 218ms (ActiveRecord: 60.3ms)
+
+
+Started GET "/carts/8" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCart Load (0.6ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mLineItem Load (0.3ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 8]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", 13]]
+  Rendered carts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 50ms (Views: 20.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 06:34:22 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 06:34:24 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.7ms)
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 06:34:24 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.7ms)
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 06:34:24 +0800
+
+
+Started POST "/line_items?product_id=14" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"14"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "14"]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cart_id", 8], ["created_at", Tue, 23 Jul 2013 22:34:28 UTC +00:00], ["product_id", 14], ["updated_at", Tue, 23 Jul 2013 22:34:28 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? ORDER BY "carts"."id" ASC LIMIT 1[0m  [["id", 8]]
+Redirected to http://0.0.0.0:3000/carts/8
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/carts/8" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 8]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", 13]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", 14]]
+  Rendered carts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 06:34:28 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 06:34:30 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.4ms)
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 06:34:30 +0800
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 06:34:30 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddQuantityToLineItems (20130723224745)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (34.0ms)[0m  [1mALTER TABLE "line_items" ADD "quantity" integer DEFAULT 1[0m
+  [1m[35mSQL (29.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130723224745"]]
+  [1m[36m (13.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by StoreController#index as HTML
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Product> at /Users/zhanghao/depot/depot/app/models/product.rb:2)
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (151.3ms)
+Completed 200 OK in 321ms (Views: 293.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 07:10:02 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-24 07:10:08 +0800
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 145ms (Views: 143.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (65.4ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 07:10:09 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (54.8ms)
+
+
+Started POST "/line_items?product_id=13" for 127.0.0.1 at 2013-07-24 07:10:12 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"13"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "13"]]
+Completed 500 Internal Server Error in 16ms
+
+NoMethodError (undefined method `id' for :product:Symbol):
+  app/controllers/line_items_controller.rb:29:in `create'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started POST "/line_items?product_id=13" for 127.0.0.1 at 2013-07-24 07:11:50 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"13"}
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 8]]
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Product> at /Users/zhanghao/depot/depot/app/models/product.rb:2)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "13"]]
+Completed 500 Internal Server Error in 61ms
+
+NameError (undefined local variable or method `current_item' for #<Cart:0x007fc642162fa0>):
+  app/models/cart.rb:5:in `add_product'
+  app/controllers/line_items_controller.rb:29:in `create'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started GET "/l" for 127.0.0.1 at 2013-07-24 07:11:58 +0800
+
+ActionController::RoutingError (No route matches [GET] "/l"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (94.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (1.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (75.5ms)
+Completed 200 OK in 177ms (Views: 172.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (70.3ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 07:12:02 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (109.0ms)
+
+
+Started POST "/line_items?product_id=13" for 127.0.0.1 at 2013-07-24 07:12:04 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"13"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "13"]]
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `current_item' for #<Cart:0x007fc6423dc2b8>):
+  app/models/cart.rb:5:in `add_product'
+  app/controllers/line_items_controller.rb:29:in `create'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 308ms (Views: 306.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 07:14:10 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (53.5ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 07:14:11 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (81.5ms)
+
+
+Started POST "/line_items?product_id=13" for 127.0.0.1 at 2013-07-24 07:14:12 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"13"}
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mProduct Load (12.8ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "13"]]
+Completed 500 Internal Server Error in 28ms
+
+NameError (undefined local variable or method `current_item' for #<Cart:0x007fc6460a3c50>):
+  app/models/cart.rb:5:in `add_product'
+  app/controllers/line_items_controller.rb:29:in `create'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-24 07:16:41 +0800
+Processing by StoreController#index as HTML
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Product> at /Users/zhanghao/depot/depot/app/models/product.rb:2)
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (132.1ms)
+Completed 200 OK in 211ms (Views: 190.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.4ms)
+
+
+Started GET "/images/dd.jpg" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/dd.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.5ms)
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at 2013-07-24 07:16:42 +0800
+
+
+Started POST "/line_items?product_id=13" for 127.0.0.1 at 2013-07-24 07:16:43 +0800
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"48xm8AgPU+KszuDUhFqmppjP44V1Irw8EuLiPQcC9BU=", "product_id"=>"13"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "13"]]
+  [1m[35mLineItem Load (2.8ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ? AND "line_items"."product_id" = 13 LIMIT 1  [["cart_id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.0ms)[0m  UPDATE "line_items" SET "quantity" = ?, "updated_at" = ? WHERE "line_items"."id" = 6  [["quantity", 2], ["updated_at", Tue, 23 Jul 2013 23:16:44 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.7ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? ORDER BY "carts"."id" ASC LIMIT 1  [["id", 8]]
+Redirected to http://0.0.0.0:3000/carts/8
+Completed 302 Found in 381ms (ActiveRecord: 22.7ms)
+
+
+Started GET "/carts/8" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCart Load (2.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mLineItem Load (0.4ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 8]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", 13]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", 14]]
+  Rendered carts/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 79ms (Views: 62.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2013-07-24 07:16:44 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/zhanghao/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (57.2ms)
