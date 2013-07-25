@@ -69,7 +69,7 @@ class CartsController < ApplicationController
     @cart.destroy
     session[:cart_id] = nil
     respond_to do |format|
-      format.html { redirect_to (store_url) }
+      format.html { redirect_to store_url, notice: 'Your cart is curently empty' }
       format.json { head :no_content}
     end
   end
@@ -81,12 +81,7 @@ class CartsController < ApplicationController
       @cart = Cart.find(params[:id])
     rescue ActiveRecord::RecordNotFound
       logger.error "Attempt to access invalid car #{params[:id]}"
-      redirect_to store_url, :notice => 'Invalid cart'
-    else
-      respond_to do |format|
-        format.html # show.html.erb
-        format.json {render json:@cart }
-      end
+      redirect_to store_url, notice: 'Invalid cart'
     end
     end
 
