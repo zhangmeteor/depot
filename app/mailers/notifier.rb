@@ -1,5 +1,5 @@
 class Notifier < ActionMailer::Base
-  default from: 'Zhang Ruby <zhang438114643@gmail.com>'
+  default from: "zhang438114643@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
