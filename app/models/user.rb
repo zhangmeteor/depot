@@ -7,7 +7,8 @@ attr_accessor :password_confirmation
 attr_reader   :password
 validate :password_must_be_present
 
-def User.authenticate(name, password)
+class << self
+def authenticate(name, password)
   if user = find_by_name(name)
     if user.hashed_password == encrypt_password(password, user.salt)
       user
@@ -15,8 +16,9 @@ def User.authenticate(name, password)
   end
 end
 
-def User.encrypt_password(password, salt)
+def encrypt_password(password, salt)
   Digest::SHA2.hexdigest(password + "wibble" + salt)
+end
 end
 
 # 'password' is a virtual attribute
