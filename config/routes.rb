@@ -8,6 +8,8 @@ Depot::Application.routes.draw do
      delete 'logout' => :destroy
    end
 
+   scope '(:locale)' do
+
   get "session/new"
   get "session/create"
   get "session/destroy"
@@ -78,4 +80,5 @@ Depot::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+   end
 end
