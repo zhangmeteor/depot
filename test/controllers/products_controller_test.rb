@@ -6,7 +6,7 @@ class ProductsControllerTest < ActionController::TestCase
     @update = {
     :title => 'Lorem Ipsum',
     :description => 'Wibbles are fun!',
-    :image_url => 'lorem.jpg'
+    :image_url => 'lorem.jpg',
     :price => 19.95
     }
   end
@@ -24,7 +24,7 @@ class ProductsControllerTest < ActionController::TestCase
 
   test "should create product" do
     assert_difference('Product.count') do
-      post :create, :product: { description: @update.description, image_url: @update.image_url, price: @update.price, title: @update.title }
+      post :create, product: { description: @update.description, image_url: @update.image_url, price: @update.price, title: @update.title }
     end
 
     assert_redirected_to product_path(assigns(:product))
