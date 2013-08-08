@@ -32,6 +32,7 @@ class OrdersController < ApplicationController
       format.html # new.html.erb
       format.json{render json: @order}
     end
+     @a = request.original_url
   end
 
   # GET /orders/1/edit
@@ -49,8 +50,7 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         Notifier.order_received(@order).deliver
-        puts '---------------------test--------'
-        format.html { redirect_to store_url, notice: 'Thank you for your order.' }
+        format.html { redirect_to store_url, :notice => I18n.t('.thanks') }
         format.json { render json: @order, status: :created, location: @order }
       else
         format.html { render action: 'new' }

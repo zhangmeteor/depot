@@ -8,7 +8,6 @@
 #
 # In views, this is aliased to just `t`:
 #
-#     <%= t('hello') %>
 #
 # To use a different locale, set it with `I18n.locale`:
 #
@@ -20,24 +19,43 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  layouts:
+    application:
+      title:     "Pragmatic Bookshelf"
+      home:      "Home"
+      questions: "Questions"
+      news:      "News"
+      contact:   "Contact"
 
-store:
-index:
-title_html: "Your Pragmatic Catalog"
-add:  "Add to Cart"
+  store:
+    index:
+      title_html: "Your Pragmatic Catalog"
+      add:  "Add to Cart"
 
+  carts:
+    cart:
+      title:     "Your Cart"
+      empty:     "Empty cart"
+      checkout:   "Checkout"
 
-carts:
-cart:
-title:     "Your Cart"
-empty:     "Empty cart"
-checkout:   "Checkout"
+  number:
+    currency:
+      format:
+        unit:     "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format:    "%u%n"
 
+  orders:
+    new:
+      legend:       "Please Enter your Details"
+    form:
+      name:       "Name"
+      address:    "Address"
+      email:      "E-mail"
+      pay_type:   "Pay with"
+      pay_prompt: "Select a payment method"
+      submit:     "Place Order"
 
-layouts:
-application:
-title:     "Pragmatic Bookshelf"
-home:      "Home"
-questions: "Questions"
-news:      "News"
-contact:   "Contact"
+  thanks:    "Thank you for your order"

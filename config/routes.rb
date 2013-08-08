@@ -1,18 +1,14 @@
 Depot::Application.routes.draw do
-  get "admin/index"
 
   get 'admin' => 'admin#index'
-   controller :session do
+   controller :sessions do
      get 'login' => :new
      post 'login' => :create
      delete 'logout' => :destroy
    end
 
-   scope '(:locale)' do
+  scope '(:locale)' do
 
-  get "session/new"
-  get "session/create"
-  get "session/destroy"
   resources :users
 
   resources :orders
@@ -21,7 +17,6 @@ Depot::Application.routes.draw do
 
   resources :carts
 
-  get "store/index"
   resources :products do
     get :who_bought, on: :member
   end
